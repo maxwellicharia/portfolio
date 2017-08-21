@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Portfolio</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+    
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+  
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+  
+  <!-- Place your favicon.ico and apple-touch-icon.png in the template root directory -->
+  <link href="favicon.ico" rel="shortcut icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet"> 
+  
+  <!-- Bootstrap CSS File -->
+  <link href="static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Libraries CSS Files -->
+  <link href="static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/lib/animate-css/animate.min.css" rel="stylesheet">
+  
+  <!-- Main Stylesheet File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="preloader"></div>
+  
+<!--==========================
+  Hero Section
+============================-->
+
+  <section id="hero">
+    <div class="hero-container">
+      <div class="wow fadeIn">
+        <div class="hero-logo">
+            {% for message in get_flashed_messages() %}
+                    <h2>{{ message }}</h2>
+            {% endfor %}
+            <br>
+          <img class="" src="static/img/logo.png" alt="Imperial">
+        </div>
+        
+        <h1>Welcome to Smartfolios</h1>
+        <h2>We create <span class="rotating">market websites, information websites, smart portfolios, customer reaching sites</span></h2>
+        <div class="actions">
+          <a href="#about" class="btn-get-started">Embark</a>
+          <a href="#services" class="btn-services">Services Provided</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!--==========================
+  Header Section
+============================-->
+  <header id="header">
+    <div class="container">
+    
+      <div id="logo" class="pull-left">
+        <a href="#hero"><img src="static/img/logo.png" alt="" title="" ></a>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+        
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">Services</a></li>
+          <!--<li><a href="#portfolio">Portfolio</a></li>-->
+          <li><a href="#team">Team</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+    
+<!--==========================
+  About Section
+============================-->
+  <section id="about">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">About Us</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">We are a dedicated team that makes work easier. Tired of hiring people for marketing? Contact us for the fee of one to serve many!</p>
+        </div>
+      </div>
+    </div>
+    <div class="container about-container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-6 col-md-push-6 about-content">
+          <h2 class="about-title">We provide great services and innovations</h2>
+          <p class="about-text">
+            Young and upcoming, smart and technical. Aim high, satisfy needs and most importantly, deliver! We take your objective, turn it into a goal and pursue it until all the gaps are bridged!
+          </p>
+          <p class="about-text">
+            We were united by a common goal of reaching the customer to the provider and both having a mutual relationship. It is by sheer unity in our projects that we deliver to the best of our clients desires. Quality is a highly valued entity in our partnership and therefore productivity and top notch services are provided.
+          </p>
+          <p class="about-text">
+            Clearly outlined goals and objectives for well defined work breakdown and time estimates. Rational propositions based on the work cut out and documents to ascertain that the service provided and task we have set out to do is done to the desire of you, our client.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+<!--==========================
+  Services Section
+============================-->
+  <section id="services">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Our Services</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Services provided each with their own breakdown and provision that is subject to modification on consultation with you, our client</p>
+        </div>
+      </div>
+        
+      <div class="row">
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-desktop"></i></div>
+          <h4 class="service-title"><a href="">Website development</a></h4>
+          <p class="service-description">Targeting customer reach? Website creation and deployment to reach your desired goal</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
+          <h4 class="service-title"><a href="">Statistical evaluation</a></h4>
+          <p class="service-description">Want to know how much your site has been accessed? Statistical analysis is done to help you, our client, adjust to the various demands of your customers</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
+          <h4 class="service-title"><a href="">Feedback/Customer Satisfaction</a></h4>
+          <p class="service-description">What do your customers want to change and what do they like? This is to necessitate availability of communication betwen the customer and provider</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-photo"></i></div>
+          <h4 class="service-title"><a href="">Online Gallery</a></h4>
+          <p class="service-description">Want to entice your customers and bring them running? A gallery showing your products and achievements will ensure trust from your clients</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-road"></i></div>
+          <h4 class="service-title"><a href="">Road-map Vision</a></h4>
+          <p class="service-description">Are customers curious on your future? Show it to them via a site dedicated to illustrate that you indeed have a future</p>
+        </div>
+        <div class="col-md-4 service-item">
+          <div class="service-icon"><i class="fa fa-shopping-bag"></i></div>
+          <h4 class="service-title"><a href="">Online Market</a></h4>
+          <p class="service-description">Far away? Needing more market reach? An online market will ensure that your products are available anywhere and everywhere</p>
+        </div>
+      </div>
+    </div>  
+  </section>
+
+    
+<!--==========================
+  Porfolio Section
+============================-->
+  <!--<section id="portfolio">-->
+    <!--<div class="container wow fadeInUp">-->
+      <!--<div class="row">-->
+        <!--<div class="col-md-12">-->
+          <!--<h3 class="section-title">Portfolio</h3>-->
+          <!--<div class="section-title-divider"></div>-->
+          <!--<p class="section-description">Si stante, hoc natura videlicet vult, salvam esse se, quod concedimus ses haec dicturum fuisse</p>-->
+        <!--</div>-->
+      <!--</div>-->
+      <!---->
+      <!--<div class="row">-->
+        <!--<div class="col-md-3">-->
+          <!--<a class="portfolio-item" style="background-image: url(static/img/portfolio-1.jpg);" href="">-->
+            <!--<div class="details">-->
+              <!--<h4>Portfolio 1</h4>-->
+              <!--<span>Alored dono par</span>-->
+            <!--</div>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!---->
+        <!--<div class="col-md-3">-->
+          <!--<a class="portfolio-item" style="background-image: url(static/img/portfolio-2.jpg);" href="">-->
+            <!--<div class="details">-->
+              <!--<h4>Portfolio 2</h4>-->
+              <!--<span>Alored dono par</span>-->
+            <!--</div>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!---->
+        <!--<div class="col-md-3">-->
+          <!--<a class="portfolio-item" style="background-image: url(static/img/portfolio-3.jpg);" href="">-->
+            <!--<div class="details">-->
+              <!--<h4>Portfolio 3</h4>-->
+              <!--<span>Alored dono par</span>-->
+            <!--</div>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!---->
+        <!--<div class="col-md-3">-->
+          <!--<a class="portfolio-item" style="background-image: url(static/img/portfolio-4.jpg);" href="">-->
+            <!--<div class="details">-->
+              <!--<h4>Portfolio 4</h4>-->
+              <!--<span>Alored dono par</span>-->
+            <!--</div>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!---->
+        <!--<div class="col-md-3">-->
+          <!--<a class="portfolio-item" style="background-image: url(static/img/portfolio-5.jpg);" href="">-->
+            <!--<div class="details">-->
+              <!--<h4>Portfolio 5</h4>-->
+              <!--<span>Alored dono par</span>-->
+            <!--</div>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!---->
+        <!--<div class="col-md-3">-->
+          <!--<a class="portfolio-item" style="background-image: url(static/img/portfolio-6.jpg);" href="">-->
+            <!--<div class="details">-->
+              <!--<h4>Portfolio 6</h4>-->
+              <!--<span>Alored dono par</span>-->
+            <!--</div>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!---->
+        <!--<div class="col-md-3">-->
+          <!--<a class="portfolio-item" style="background-image: url(static/img/portfolio-7.jpg);" href="">-->
+            <!--<div class="details">-->
+              <!--<h4>Portfolio 7</h4>-->
+              <!--<span>Alored dono par</span>-->
+            <!--</div>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!---->
+        <!--<div class="col-md-3">-->
+          <!--<a class="portfolio-item" style="background-image: url(static/img/portfolio-8.jpg);" href="">-->
+            <!--<div class="details">-->
+              <!--<h4>Portfolio 8</h4>-->
+              <!--<span>Alored dono par</span>-->
+            <!--</div>-->
+          <!--</a>-->
+        <!--</div>-->
+        <!---->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</section>-->
+
+<!--==========================
+  Team Section
+============================-->    
+  <section id="team">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Our Team</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Dedicated to the task, seeking nothing but the best, my highly esteemed team</p>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="static/img/team-1.jpg" alt=""></div>
+            <h4>Walter White</h4>
+            <span>Chief Executive Officer</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="static/img/team-2.jpg" alt=""></div>
+            <h4>Sarah Jhinson</h4>
+            <span>Product Manager</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="static/img/team-3.jpg" alt=""></div>
+            <h4>William Anderson</h4>
+            <span>CTO</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-3">
+          <div class="member">
+            <div class="pic"><img src="static/img/team-4.jpg" alt=""></div>
+            <h4>Amanda Jepson</h4>
+            <span>Accountant</span>
+            <div class="social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        
+      </div>  
+    </div>
+  </section>
+    
+<!--==========================
+  Contact Section
+============================--> 
+   <!--<section id="contact">-->
+    <!--<div class="container wow fadeInUp">-->
+      <!--<div class="row">-->
+        <!--<div class="col-md-12">-->
+          <!--<h3 class="section-title">Contact Us</h3>-->
+          <!--<div class="section-title-divider"></div>-->
+          <!--<p class="section-description">Response is guaranteed to be in less than 24 hrs, just as urgent as you need us, we'll be so kind to return the favour</p>-->
+        <!--</div>-->
+      <!--</div>-->
+
+      <!--<div class="row">-->
+        <!--<div class="col-md-3 col-md-push-2">-->
+          <!--<div class="info">-->
+            <!--<div>-->
+              <!--<i class="fa fa-map-marker"></i>-->
+              <!--<p>Nairobi City<br>Nairobi</p>-->
+            <!--</div>-->
+
+            <!--<div>-->
+              <!--<i class="fa fa-envelope"></i>-->
+              <!--<p>info@example.com</p>-->
+            <!--</div>-->
+
+            <!--<div>-->
+              <!--<i class="fa fa-phone"></i>-->
+              <!--<p>+254 710227118</p>-->
+            <!--</div>-->
+
+          <!--</div>-->
+        <!--</div>-->
+
+        <!--&lt;!&ndash;<div class="col-md-5 col-md-push-2">&ndash;&gt;-->
+          <!--&lt;!&ndash;<div class="form">&ndash;&gt;-->
+            <!--&lt;!&ndash;<div id="sendmessage">Your message has been sent. Thank you!</div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<div id="errormessage"></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;<form action="" method="post" role="form" class="contactForm">&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                  <!--&lt;!&ndash;<input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />&ndash;&gt;-->
+                  <!--&lt;!&ndash;<div class="validation"></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                  <!--&lt;!&ndash;<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />&ndash;&gt;-->
+                  <!--&lt;!&ndash;<div class="validation"></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                  <!--&lt;!&ndash;<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />&ndash;&gt;-->
+                  <!--&lt;!&ndash;<div class="validation"></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="form-group">&ndash;&gt;-->
+                  <!--&lt;!&ndash;<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>&ndash;&gt;-->
+                  <!--&lt;!&ndash;<div class="validation"></div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;<div class="text-center"><button type="submit">Send Message</button></div>&ndash;&gt;-->
+            <!--&lt;!&ndash;</form>&ndash;&gt;-->
+          <!--&lt;!&ndash;</div>&ndash;&gt;-->
+        <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+      <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+  <!--&lt;!&ndash;</section>&ndash;&gt;-->
+  <!--==========================
+  Contact Section
+============================-->
+   <section id="contact">
+    <div class="container wow fadeInUp">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="section-title">Contact Us</h3>
+          <div class="section-title-divider"></div>
+          <p class="section-description">Response is guaranteed to be in less than 24 hrs, just as urgent as you need us, we'll be so kind to return the favour!</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3 col-md-push-2">
+          <div class="info">
+            <div>
+              <i class="fa fa-map-marker"></i>
+              <p>Nairobi City<br>Nairobi</p>
+            </div>
+
+            <div>
+              <i class="fa fa-envelope"></i>
+              <p>info@example.com</p>
+            </div>
+
+            <div>
+              <i class="fa fa-phone"></i>
+              <p>+254 710227118</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-md-5 col-md-push-2">
+          <div class="form">
+            <div style = "text-align: center;">
+             <form action = "/" method = "POST">
+            <fieldset>
+
+                  {{ form.hidden_tag() }}
+                  <div class="form-group">
+                    <p>
+                  {{ form.name.label }}
+                  {{ form.name }}
+                    </p>
+                  </div>
+                <p>
+                  {{ form.email.label }}
+                  {{ form.email }}
+                </p>
+                <p>
+                  {{ form.subject.label }}
+                  {{ form.subject }}
+                </p>
+                <p>
+                  {{ form.message.label }}
+                  {{ form.message }}
+                </p>
+                 <p>
+                  {{ form.proposal.label }}
+                  {{ form.proposal }}
+                </p>
+                <div class="submit">
+                <p>
+                  {{ form.submit }}
+                </p>
+                </div>
+                    </fieldset>
+
+              </form>
+            </div>
+
+                <!--<div class="form-group">-->
+                  <!--<input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />-->
+                  <!--<div class="validation"></div>-->
+                <!--</div>-->
+
+
+                <!--<div class="form-group">-->
+                  <!--<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />-->
+                  <!--<div class="validation"></div>-->
+                <!--</div>-->
+
+
+                <!--<div class="form-group">-->
+                  <!--<textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>-->
+                  <!--<div class="validation"></div>-->
+                <!--</div>-->
+
+
+                <!--<div class="text-center"><button type="submit">Send Message</button></div>-->
+
+            <!--</form>-->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+<!--==========================
+  Footer
+============================--> 
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong> Smartfolio</strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+              <!-- 
+                All the links in the footer should remain intact. 
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
+              -->
+              Theme by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
+  
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    
+  <!-- Required JavaScript Libraries -->
+  <script src="static/lib/jquery/jquery.min.js"></script>
+  <script src="static/lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="static/lib/superfish/hoverIntent.js"></script>
+  <script src="static/lib/superfish/superfish.min.js"></script>
+  <script src="static/lib/morphext/morphext.min.js"></script>
+  <script src="static/lib/wow/wow.min.js"></script>
+  <script src="static/lib/stickyjs/sticky.js"></script>
+  <script src="static/lib/easing/easing.js"></script>
+  
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="static/js/custom.js"></script>
+
+</body>
+</html>
