@@ -1,0 +1,11 @@
+
+/* Message flashing */
+.good {
+  color : #5CD52A;
+}
+.error {
+  color : #EE1111;
+}
+.already {
+  color : #15A627;
+}
