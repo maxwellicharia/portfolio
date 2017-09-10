@@ -37,6 +37,9 @@
   <!-- Main Stylesheet File -->
   <link href="static/css/style.css" rel="stylesheet">
 
+  <!-- Custom Fonts -->
+    <link href="static/css/custom.css" rel="stylesheet" type="text/css">
+
 </head>
 
 <body>
@@ -50,14 +53,20 @@
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-            {% for message in get_flashed_messages() %}
-                    <h2>{{ message }}</h2>
-            {% endfor %}
+            {% if good %}
+              <h3 class = "good">Message has been sent successfully</h3>
+            {% endif %}
+            {% if error %}
+              <h3 class = "error">An error has occurred, try again</h3>
+            {% endif %}
+            {% if not_valid %}
+              <h3 class = "error">Valid data is required to submit</h3>
+            {% endif %}
             <br>
           <img class="" src="static/img/logo.png" alt="Imperial">
         </div>
         
-        <h1>Welcome to Smartfolios</h1>
+        <h1>Welcome to <span class="rotating">Advanced, World, Administration, Revolutionary, Developers</span></h1>
         <h2>We create <span class="rotating">market websites, information websites, smart portfolios, customer reaching sites</span></h2>
         <div class="actions">
           <a href="#about" class="btn-get-started">Embark</a>
@@ -145,17 +154,17 @@
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-bar-chart"></i></div>
           <h4 class="service-title"><a href="">Statistical evaluation</a></h4>
-          <p class="service-description">Want to know how much your site has been accessed? Statistical analysis is done to help you, our client, adjust to the various demands of your customers</p>
+          <p class="service-description">Want to know how much your site has been accessed? Adjust to the demands of your customers with us</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-paper-plane"></i></div>
           <h4 class="service-title"><a href="">Feedback/Customer Satisfaction</a></h4>
-          <p class="service-description">What do your customers want to change and what do they like? This is to necessitate availability of communication betwen the customer and provider</p>
+          <p class="service-description">What do your customers want to change and what do they like? Have a communication platform with us</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-photo"></i></div>
           <h4 class="service-title"><a href="">Online Gallery</a></h4>
-          <p class="service-description">Want to entice your customers and bring them running? A gallery showing your products and achievements will ensure trust from your clients</p>
+          <p class="service-description">Want to entice your customers and bring them running? Show products and achievements to ensure trust from your clients</p>
         </div>
         <div class="col-md-4 service-item">
           <div class="service-icon"><i class="fa fa-road"></i></div>
@@ -269,7 +278,7 @@
     <div class="container wow fadeInUp">
       <div class="row">
         <div class="col-md-12">
-          <h3 class="section-title">Our Team</h3>
+          <h3 class="section-title">Team A.W.A.R.D</h3>
           <div class="section-title-divider"></div>
           <p class="section-description">Dedicated to the task, seeking nothing but the best, my highly esteemed team</p>
         </div>
@@ -279,56 +288,56 @@
         <div class="col-md-3">
           <div class="member">
             <div class="pic"><img src="static/img/team-1.jpg" alt=""></div>
-            <h4>Walter White</h4>
-            <span>Chief Executive Officer</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+            <h4>Maxwell K. Icharia</h4>
+            <span>Founder & Chief Executive Officer</span>
+            <!--<div class="social">-->
+              <!--<a href=""><i class="fa fa-twitter"></i></a>-->
+              <!--<a href=""><i class="fa fa-facebook"></i></a>-->
+              <!--<a href=""><i class="fa fa-google-plus"></i></a>-->
+              <!--<a href=""><i class="fa fa-linkedin"></i></a>-->
+            <!--</div>-->
           </div>
         </div>
         
         <div class="col-md-3">
           <div class="member">
             <div class="pic"><img src="static/img/team-2.jpg" alt=""></div>
-            <h4>Sarah Jhinson</h4>
-            <span>Product Manager</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+            <h4>Fatma H. Abdalla</h4>
+            <span>Co-Founder & Chief Financial Officer</span>
+            <!--<div class="social">-->
+              <!--<a href=""><i class="fa fa-twitter"></i></a>-->
+              <!--<a href=""><i class="fa fa-facebook"></i></a>-->
+              <!--<a href=""><i class="fa fa-google-plus"></i></a>-->
+              <!--<a href=""><i class="fa fa-linkedin"></i></a>-->
+            <!--</div>-->
           </div>
         </div>
         
         <div class="col-md-3">
           <div class="member">
             <div class="pic"><img src="static/img/team-3.jpg" alt=""></div>
-            <h4>William Anderson</h4>
-            <span>CTO</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+            <h4>Sally Latifa</h4>
+            <span>Manager</span>
+            <!--<div class="social">-->
+              <!--<a href=""><i class="fa fa-twitter"></i></a>-->
+              <!--<a href=""><i class="fa fa-facebook"></i></a>-->
+              <!--<a href=""><i class="fa fa-google-plus"></i></a>-->
+              <!--<a href=""><i class="fa fa-linkedin"></i></a>-->
+            <!--</div>-->
           </div>
         </div>
-        
+        <!---->
         <div class="col-md-3">
           <div class="member">
             <div class="pic"><img src="static/img/team-4.jpg" alt=""></div>
-            <h4>Amanda Jepson</h4>
-            <span>Accountant</span>
-            <div class="social">
-              <a href=""><i class="fa fa-twitter"></i></a>
-              <a href=""><i class="fa fa-facebook"></i></a>
-              <a href=""><i class="fa fa-google-plus"></i></a>
-              <a href=""><i class="fa fa-linkedin"></i></a>
-            </div>
+            <h4>Braxton Muimi</h4>
+            <span>Developer</span>
+            <!--<div class="social">-->
+              <!--<a href=""><i class="fa fa-twitter"></i></a>-->
+              <!--<a href=""><i class="fa fa-facebook"></i></a>-->
+              <!--<a href=""><i class="fa fa-google-plus"></i></a>-->
+              <!--<a href=""><i class="fa fa-linkedin"></i></a>-->
+            <!--</div>-->
           </div>
         </div>
         
@@ -437,23 +446,35 @@
           <div class="form">
             <div style = "text-align: center;">
              <form action = "/" method = "POST">
-            <fieldset>
+            <!--<fieldset>-->
 
                   {{ form.hidden_tag() }}
                   <div class="form-group">
-                    <p>
+                        {% for message in form.name.errors %}
+                    <div class = "error">{{ message }}</div>
+                    {% endfor %}
+                      <p>
                   {{ form.name.label }}
                   {{ form.name }}
                     </p>
                   </div>
+                 {% for message in form.phone.errors %}
+                    <div class = "error">{{ message }}</div>
+                    {% endfor %}
+                 <p>
+                  {{ form.phone.label }}
+                  {{ form.phone }}
+                </p>
+                 {% for message in form.email.errors %}
+                    <div class = "error">{{ message }}</div>
+                    {% endfor %}
                 <p>
                   {{ form.email.label }}
                   {{ form.email }}
                 </p>
-                <p>
-                  {{ form.subject.label }}
-                  {{ form.subject }}
-                </p>
+                 {% for message in form.message.errors %}
+                    <div class = "error">{{ message }}</div>
+                    {% endfor %}
                 <p>
                   {{ form.message.label }}
                   {{ form.message }}
@@ -467,7 +488,7 @@
                   {{ form.submit }}
                 </p>
                 </div>
-                    </fieldset>
+                    <!--</fieldset>-->
 
               </form>
             </div>
@@ -508,7 +529,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="copyright">
-              &copy; Copyright <strong> Smartfolio</strong>. All Rights Reserved
+              &copy; Copyright <strong> A.W.A.R.D </strong>. All Rights Reserved
             </div>
             <div class="credits">
               <!-- 
