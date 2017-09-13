@@ -15,9 +15,12 @@ class ContactForm(FlaskForm):
                                                                       "name?"
                                                                       "")])
     phone = IntegerField('Phone Number:', [validators.DataRequired(message =
-                                                                   "Kindly "
-                                                                   "leave your "
-                                                                   "phone number"
+                                                                   "Leave "
+                                                                   "your "
+                                                                   "phone "
+                                                                   "number or "
+                                                                   "check if "
+                                                                   "it's okay"
                                                                    "")])
     email = StringField('Email Address:', [validators.DataRequired(message =
                                                                    "Leave your "
@@ -29,5 +32,4 @@ class ContactForm(FlaskForm):
                                                                       "assist "
                                                                       "you?"
                                                                       "")])
-    proposal = FileField('Proposal')
     submit = SubmitField('Send Message')
