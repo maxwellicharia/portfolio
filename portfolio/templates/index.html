@@ -56,6 +56,9 @@
             {% if good %}
               <h3 class = "good">Message has been sent successfully</h3>
             {% endif %}
+            {% if already %}
+              <h3 class = "good">Thank you, wait for response</h3>
+            {% endif %}
             {% if error %}
               <h3 class = "error">An error has occurred, try again</h3>
             {% endif %}
@@ -431,12 +434,14 @@
 
             <div>
               <i class="fa fa-envelope"></i>
-              <p>info@example.com</p>
+              <p>award.me001@gmail.com</p>
             </div>
 
             <div>
               <i class="fa fa-phone"></i>
               <p>+254 710227118</p>
+              <i class="fa fa-phone"></i>
+              <p>+254 717321814</p>
             </div>
 
           </div>
@@ -445,7 +450,7 @@
         <div class="col-md-5 col-md-push-2">
           <div class="form">
             <div style = "text-align: center;">
-             <form action = "/" method = "POST">
+             <form action = "/" method = "POST" enctype="multipart/form-data">
             <!--<fieldset>-->
 
                   {{ form.hidden_tag() }}
@@ -478,10 +483,6 @@
                 <p>
                   {{ form.message.label }}
                   {{ form.message }}
-                </p>
-                 <p>
-                  {{ form.proposal.label }}
-                  {{ form.proposal }}
                 </p>
                 <div class="submit">
                 <p>
