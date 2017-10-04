@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 from flask_mail import Mail, Message
-from portfolio.forms import ContactForm
+from forms import ContactForm
 
 # Instantiating a class from Flask called app
 app = Flask(__name__)

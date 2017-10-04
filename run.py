@@ -1,4 +1,4 @@
-from portfolio.routes import app
+from routes import app
 # importing file to be run from here
 
 if __name__ == '__main__':
