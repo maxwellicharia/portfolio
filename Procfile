@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath app intro_to_run
+web: gunicorn --pythonpath Portfolio Portfolio.run
