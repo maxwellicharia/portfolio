@@ -8,6 +8,7 @@ enum34==1.1.6
 flake8==3.4.1
 Flask==0.12.2
 Flask-Mail==0.9.1
+Flask-WTF==0.14.2
 gunicorn==19.7.1
 idna==2.6
 itsdangerous==0.24
@@ -25,3 +26,4 @@ urllib3==1.22
 virtualenv==15.1.0
 virtualenv-clone==0.2.6
 Werkzeug==0.12.2
+WTForms==2.1

@@ -1,1 +1,1 @@
-web: gunicorn Portfolio run
+web: gunicorn run
