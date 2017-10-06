@@ -52,6 +52,3 @@ From: %s <%s>,
 			return render_template('index.html', form = form, good = True)
 	else:
 		return render_template('index.html', form = form, error = True)
-	
-if __name__ == '__main__':
-	app.run()

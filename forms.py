@@ -1,6 +1,6 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, IntegerField, TextAreaField, SubmitField, \
-	validators, FileField
+	validators
 
 
 class ContactForm(FlaskForm):
